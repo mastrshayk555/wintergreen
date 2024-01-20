@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" width="500" viewBox="0 0 300 258.3" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+   
+    .str0 {stroke:#FF10F0;stroke-width:13}
+    .fil0 {fill:#201148}
+   
+  </style>
+  </defs>
+  <g id="Layer_x0020_1" transform="matrix(0.063318, 0, 0, 0.055927, -119.101814, -178.463074)" style="">
+    <g id="_1795315620960">
+      <polygon class="fil0 str0" points="6080,3191 6619,4077 6131,5165 6412,5750 5991,6932 4986,7352 4748,7663 4243,7809 3725,7651 3517,7349 2507,6928 2087,5752 2380,5185 1881,4074 2429,3197 3155,3684 4245,3373 5336,3672 "/>
+      <path class="fil0 str0" d="M5344 3788l975 1975 -378 1054 -1206 -2072 609 -957zm-694 954l173 1347 266 478 -162 713 -213 102 -419 -145 -3 -88 338 -83 225 -231c-404,71 -805,69 -1203,-6l222 228 339 89 3 95 -413 140 -221 -104 -166 -728 271 -454 161 -1380 -624 -975 1017 -278 1042 272 -633 1008zm-1682 1561l374 278 150 685 -884 -372 360 -591zm812 -1546l-1225 2055 -375 -1059 981 -1974 619 978zm1390 1831l372 -280 344 582 -877 366 161 -668zm-458 881l140 -61 -143 189 -463 124 -451 -137 -131 -173 131 55 223 -89 231 73 247 -70 216 89z"/>
+    </g>
+  </g>
+</svg>

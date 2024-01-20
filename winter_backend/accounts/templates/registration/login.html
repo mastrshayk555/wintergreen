@@ -1,0 +1,38 @@
+{% extends "site_base/index.html" %}
+{% load static %}
+
+{% block page_title %}Wintergreen - Register{% endblock page_title %}
+{% block extra_head %}
+{{ block.super }}
+{% endblock extra_head %}
+{% block body %}
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h3 class="panel-heading">Log In</h3>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Log In" class="btn btn-success">
+      </form>
+    </div>
+  </div>
+  <hr>
+  <div class="row justify-content-center">
+    <br>
+    <div class="col-md-4">
+      <p style="color: --winter-red">Don't have account yet?</p>
+      <button class="btn btn-success"><a href="/accounts/register" class="nav-link">Register here</a></button>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock body %}
+
+{% block extra_scripts %}
+{{ block.super }}
+{% endblock extra_scripts%}

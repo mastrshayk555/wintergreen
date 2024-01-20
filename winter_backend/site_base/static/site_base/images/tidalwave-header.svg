@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1017"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="tidalwave-header.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1019"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.73139029"
+     inkscape:cx="397.18876"
+     inkscape:cy="452.56275"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs>
+  <radialGradient cx="116.70788%" cy="110.133192%" fx="116.70788%" fy="110.133192%" r="147.799618%" gradientTransform="translate(1.167079,1.101332),scale(0.096080,1.000000),rotate(-174.580171),translate(-1.167079,-1.101332)" id="radialGradient-1">
+            <stop stop-color="#0069FF" offset="0%"></stop>
+            <stop stop-color="#0269FD" offset="2.91250472%"></stop>
+            <stop stop-color="#0369FC" offset="4.5053357%"></stop>
+            <stop stop-color="#0468FB" offset="6.00516035%"></stop>
+            <stop stop-color="#1165EF" offset="25.4821693%"></stop>
+            <stop stop-color="#4457C0" offset="100%"></stop>
+        </radialGradient>
+     </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#201148;stroke-width:2.026"
+       id="rect1100"
+       width="210.26889"
+       height="37.129787"
+       x="1.3877788e-17"
+       y="0" />
+    <path
+       style="mix-blend-mode:lighten;fill:none;fill-opacity:1;stroke:#ff10f0;stroke-width:0.341942;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 0.5018531,25.379162 55.6818199,-5.791437 14.275761,-6.060984 23.654345,-7.892 12.645741,-2.270524 10.345,3.247066 2.91352,6.153952 0.27942,2.792194 -2.1532,-1.473295 -5.8074,-3.674168 -6.98095,1.472769 -7.220499,6.593079 1.474492,7.360948 11.258647,5.848362 14.95544,2.713966 17.2996,-1.10841 39.23279,-5.89394 28.8902,-2.606377 M -2.0257341,-7.741091"
+       id="path911"
+       sodipodi:nodetypes="cccccccccccccccccc" />
+  </g>
+</svg>

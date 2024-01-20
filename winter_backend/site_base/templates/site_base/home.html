@@ -1,0 +1,33 @@
+{% extends "site_base/index.html" %}
+{% load static %}
+
+{% block page_title %}ObsoletePanda{% endblock page_title %}
+{% block extra_head%}
+{{ block.super }}
+{% endblock extra_head %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome to Wintergreen</h2>
+                <p>We're a free personal finance budgeting application. It's like Mint, but less bloated and I don't sell your data.</p>
+                <p>Get started by signing up</p>
+                <a href="/accounts/register">
+                    <button class="btn btn-outline-secondary btn-lg" style="width: 250px;">Sign Up</button>
+                </a>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'site_base/images/GeometricPanda.svg' %}" class="img-fluid" alt="">
+        </div>
+        
+    </div>
+</div>
+
+{% endblock body %}
+
+{% block extra_scripts %}
+{{ block.super }}
+{% endblock extra_scripts%}
+
+</html>
