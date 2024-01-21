@@ -1,16 +1,18 @@
 from django.db import models
 from localflavor.us.models import USStateField
 from phonenumber_field.modelfields import PhoneNumberField
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 # Create your models here.
 
 class UserAccountManager(BaseUserManager):
-    def create_user(self, email, password=None):
+    def create_user(self, email, password=None, **optionals):
         if not email:
             raise ValueError('Users must have an email address')
-        
         user = self.model(
             email=self.normalize_email(email),
+            first_name=optionals['first_name'],
+            last_name=optionals['last_name'],
+            phone=optionals['phone'],
         )
 
         user.set_password(password)
@@ -46,7 +48,6 @@ class User(AbstractBaseUser):
 
     EMAIL_FIELD = 'email'
     USERNAME_FIELD = 'email'
-    #REQUIRED_FIELDS = ['first_name', 'last_name']
 
     def get_full_name(self):
         return f'{self.first_name} {self.last_name}'
