@@ -77,7 +77,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -89,7 +89,6 @@ TEMPLATES = [
         },
     },
 ]
-print(TEMPLATES)
 
 WSGI_APPLICATION = "winter_core.wsgi.application"
 
@@ -158,10 +157,11 @@ DJOSER = {
     'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
     'SEND_CONFIRMATION_EMAIL': True,
     'SET_PASSWORD_RETYPE': True,
-    'USERNAME_RESET_CONFIRM_URL': 'email/reset/confirm/{uid},{token}',
-    'PASSWORD_RESET_CONFIRM_URL': 'password/reset/confirm/{uid},{token}',
+    'USERNAME_RESET_CONFIRM_URL': 'accounts/email/reset-confirm/{uid}/{token}',
+    'PASSWORD_RESET_CONFIRM_URL': 'accounts/password_reset_confirm/{uid}/{token}',
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
+    'LOGOUT_ON_PASSWORD_CHANGE': True,
     'SERIALIZERS': {
         'user_create': 'accounts.api.serializers.UserCreateSerializer',
         'user': 'accounts.api.serializers.UserCreateSerializer',
@@ -176,6 +176,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 AUTH_USER_MODEL = 'accounts.User'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_URL = 'logout'
 
 
 # EMAIL

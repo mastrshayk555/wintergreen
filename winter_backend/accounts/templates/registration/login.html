@@ -9,26 +9,28 @@
 
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-4">
-      <h3 class="panel-heading">Log In</h3>
+    <div class="col-md-4 wintergreen">
+      <h2 class="panel-heading center-text">Log In</h2>
+      <p>{{ message }}</p>
       <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Log In" class="btn btn-success">
+        <input type="hidden" name="next" value="{% url 'budgets:user-home' %}">
       </form>
+      <hr>
+      <p class="center-text">Forgot your password? <a href="/accounts/reset_password" class="nav-link">Click Here</a></p>
     </div>
   </div>
   <hr>
   <div class="row justify-content-center">
     <br>
-    <div class="col-md-4">
+    <div class="col-md-4 wintergreen center-text">
       <p style="color: --winter-red">Don't have account yet?</p>
       <button class="btn btn-success"><a href="/accounts/register" class="nav-link">Register here</a></button>
     </div>
   </div>
 </div>
-
-
 
 
 {% endblock body %}

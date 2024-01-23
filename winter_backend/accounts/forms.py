@@ -17,3 +17,40 @@ class RegisterForm(forms.Form):
             }
         )
     )
+
+
+class PasswordResetForm(forms.Form):
+    email = forms.EmailField(
+        max_length=200, 
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-control", 
+                "id": "email",
+                "style": "color:black;"
+            }
+        ),
+        required=True
+    )
+
+
+class SetPasswordForm(forms.Form):
+    password = forms.CharField(
+        max_length=100, 
+        widget=forms.PasswordInput(
+            attrs={
+                "class": "form-control", 
+                "style": "color:black;"
+            }
+        ), 
+            required=True
+    )
+    password_repeat = forms.CharField(
+        max_length=100, 
+        widget=forms.PasswordInput(
+            attrs={
+                "class": "form-control", 
+                "style": "color:black;"
+            }
+        ), 
+            required=True
+    )

@@ -17,32 +17,32 @@
                 <div class="mb-3 clearfix">
                     <label for="{{ form.email.id_for_label }}" class="control-label text-right">Email<span
                             class="text-red">*</span>:</label>
-                        {{ form.email }}
+                    {{ form.email }}
                 </div>
                 <div class="mb-3 clearfix">
-                    <label for="{{ form.password.id_for_label }}"
-                        class="control-label text-right">Password<span class="text-red">*</span>:</label>
-                        {{ form.password }}
+                    <label for="{{ form.password.id_for_label }}" class="control-label text-right">Password<span
+                            class="text-red">*</span>:</label>
+                    {{ form.password }}
                 </div>
                 <div class="mb-3 clearfix">
-                    <label for="{{ form.password_repeat.id_for_label }}"
-                        class="control-label text-right">Confirm password:</label>
-                        {{ form.password_repeat }}
+                    <label for="{{ form.password_repeat.id_for_label }}" class="control-label text-right">Confirm
+                        password:</label>
+                    {{ form.password_repeat }}
                 </div>
                 <div class="mb-3 clearfix">
                     <label for="{{ form.first_name.id_for_label }}" class="control-label text-right">First
                         Name:</label>
-                        {{ form.first_name }}
+                    {{ form.first_name }}
                 </div>
                 <div class="mb-3 clearfix">
                     <label for="{{ form.last_name.id_for_label }}" class="control-label text-right">Last
                         Name:</label>
-                        {{ form.last_name }}
+                    {{ form.last_name }}
                 </div>
                 <div class="mb-3 clearfix">
                     <label for="{{ form.phone_number.id_for_label }}" class="control-label text-right">Phone
                         Number:</label>
-                        {{ form.phone_number }}
+                    {{ form.phone_number }}
                 </div>
                 <div class="col-md-6 col-md-offset-4">
                     <input type="submit" value="Register" class="btn btn-success">
@@ -50,6 +50,19 @@
             </div>
         </div>
     </form>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            {% if error_message %}
+            <div class="col-md-12">
+                <p class="text-red">*{{ error_message }}</p>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success" value="Recover Password"><a href="/accounts/reset_password">Recover
+                    Password</a></button>
+            </div>
+            {% endif %}
+        </div>
+    </div>
 </div>
 
 
