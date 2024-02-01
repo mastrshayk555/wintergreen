@@ -8,6 +8,7 @@
 :root,
 [data-bs-theme=light] {
     --wintergreen: #38CCA4;
+    --wintergreen-light: #86e0c8;
     --winterpurple: #5A38CC;
     --winter-red: #CC3860;
     --winter-yellow: #AACC38;
@@ -208,6 +209,13 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     background-color: var(--wintergreen);
+}
+
+.winterlight-container {border-radius: 25px;
+    background: var(--wintergreen-light);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
 }
 
 .center-intro {

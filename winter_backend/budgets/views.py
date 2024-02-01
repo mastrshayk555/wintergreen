@@ -11,7 +11,6 @@ class BudgetHome(DetailView):
         template = "budgets/budget_main.html",
         if request.user.is_authenticated:
             user = User.objects.get(id=request.user.id)
-            print(user)
 
             return render(
                 request,
